@@ -1,0 +1,44 @@
+/* Styling khusus yang tidak dimiliki Bootstrap 5 */
+.product-item {
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+.product-item:hover {
+    background-color: #f8f9fa;
+}
+.qty-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.qty-control button {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ccc;
+    background: #eee;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.qty-control input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 2px;
+}
+/* Menimpa tombol metode pembayaran saat diklik */
+.payment-method .active {
+    background-color: #0d6efd !important;
+    color: white !important;
+}
+/* Warna peringatan jika uang bayar kurang[cite: 16] */
+.short-payment {
+    background-color: #f8d7da !important;
+    border-color: #f5c6cb !important;
+}
+.short-payment .change-label, 
+.short-payment h3 {
+    color: #721c24 !important;
+}
